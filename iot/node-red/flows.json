@@ -1,0 +1,29 @@
+[
+  { "id": "flow_spacestay", "type": "tab", "label": "SpaceStay IoT", "disabled": false,
+    "info": "Assina o MQTT (spacestay/fiap-gs-2026/readings) e faz POST em /api/readings." },
+
+  { "id": "broker_hivemq", "type": "mqtt-broker", "name": "HiveMQ publico",
+    "broker": "broker.hivemq.com", "port": "1883", "clientid": "", "usetls": false,
+    "protocolVersion": "4", "keepalive": "60", "cleansession": true },
+
+  { "id": "mqtt_in", "type": "mqtt in", "z": "flow_spacestay", "name": "spacestay/fiap-gs-2026/readings",
+    "topic": "spacestay/fiap-gs-2026/readings", "qos": "0", "datatype": "auto", "broker": "broker_hivemq",
+    "x": 170, "y": 120, "wires": [["json_parse"]] },
+
+  { "id": "json_parse", "type": "json", "z": "flow_spacestay", "name": "texto -> objeto",
+    "property": "payload", "action": "obj", "pretty": false,
+    "x": 380, "y": 120, "wires": [["set_header"]] },
+
+  { "id": "set_header", "type": "function", "z": "flow_spacestay", "name": "prepara POST",
+    "func": "msg.headers = { 'Content-Type': 'application/json' };\nreturn msg;",
+    "outputs": 1, "noerr": 0, "x": 580, "y": 120, "wires": [["http_post"]] },
+
+  { "id": "http_post", "type": "http request", "z": "flow_spacestay", "name": "POST /api/readings",
+    "method": "POST", "ret": "obj", "paytoqs": "ignore",
+    "url": "http://localhost:5080/api/readings", "persist": false, "authType": "",
+    "x": 800, "y": 120, "wires": [["debug_resp"]] },
+
+  { "id": "debug_resp", "type": "debug", "z": "flow_spacestay", "name": "resposta da API",
+    "active": true, "console": false, "complete": "payload",
+    "x": 1010, "y": 120, "wires": [] }
+]

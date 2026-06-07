@@ -1,0 +1,8 @@
+<resources>
+    <!-- Tema base sem ActionBar (o Compose desenha a própria UI). Fundo escuro "espacial". -->
+    <style name="Theme.SpaceStay" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/space_bg</item>
+        <item name="android:statusBarColor">@color/space_bg</item>
+        <item name="android:navigationBarColor">@color/space_bg</item>
+    </style>
+</resources>

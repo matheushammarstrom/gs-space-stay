@@ -1,0 +1,50 @@
+SpaceStay - Evidência de execução dos testes (Parte 3)
+================================================================
+  [PASS] Booking_em_modulo_disponivel_retorna_201
+  [PASS] Booking_em_modulo_lotado_retorna_409
+  [PASS] Guest_em_rota_de_equipe_retorna_403
+  [PASS] Login_com_senha_errada_retorna_401
+  [PASS] Modules_sem_token_retorna_401
+  [PASS] Reading_critica_cria_alerta_critico
+  [PASS] Reading_dentro_da_faixa_nao_cria_alerta
+  [PASS] Register_retorna_201_com_token
+  [PASS] BuildMessage_inclui_grandeza_valor_e_modulo
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 1000, min: 0, max: 1000, esperado: "safe")
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 1001, min: 0, max: 1000, esperado: "warning")
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 2000, min: 0, max: 1000, esperado: "warning")
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 2001, min: 0, max: 1000, esperado: "critical")
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 2150, min: 0, max: 1000, esperado: "critical")
+  [PASS] Evaluate_classifica_corretamente(type: co2, value: 600, min: 0, max: 1000, esperado: "safe")
+  [PASS] Evaluate_classifica_corretamente(type: o2, value: 19,399999999999999, min: 19,5, max: 23,5, esperado: "critical")
+  [PASS] Evaluate_classifica_corretamente(type: o2, value: 19,5, min: 19,5, max: 23,5, esperado: "safe")
+  [PASS] Evaluate_classifica_corretamente(type: o2, value: 20,899999999999999, min: 19,5, max: 23,5, esperado: "safe")
+  [PASS] Evaluate_classifica_corretamente(type: o2, value: 23,600000000000001, min: 19,5, max: 23,5, esperado: "critical")
+  [PASS] Evaluate_classifica_corretamente(type: pressure, value: 94,900000000000006, min: 95, max: 105, esperado: "critical")
+  [PASS] Evaluate_classifica_corretamente(type: temperature, value: 22, min: 18, max: 27, esperado: "safe")
+  [PASS] Evaluate_classifica_corretamente(type: temperature, value: 28,5, min: 18, max: 27, esperado: "warning")
+  [PASS] Evaluate_classifica_corretamente(type: water, value: 18, min: 20, max: 100, esperado: "warning")
+  [PASS] StatusLabel_e_ComfortLabel_sao_consistentes
+  [PASS] Login_com_email_inexistente_lanca_AuthenticationException
+  [PASS] Login_com_senha_errada_lanca_AuthenticationException
+  [PASS] Login_correto_de_guest_retorna_token
+  [PASS] Login_correto_de_staff_retorna_role
+  [PASS] RegisterGuest_armazena_senha_hasheada_e_retorna_token
+  [PASS] RegisterGuest_com_email_existente_lanca_conflito
+  [PASS] Create_com_datas_invalidas_lanca_validacao
+  [PASS] Create_em_modulo_disponivel_cria_reserva
+  [PASS] Create_em_modulo_em_manutencao_lanca_conflito
+  [PASS] Create_em_modulo_inexistente_lanca_notfound
+  [PASS] Create_em_modulo_lotado_lanca_conflito
+  [PASS] Create_por_membro_da_equipe_e_proibido
+  [PASS] GetById_de_outro_hospede_e_proibido
+  [PASS] Hash_nao_armazena_senha_em_texto_puro
+  [PASS] Hashes_da_mesma_senha_sao_diferentes_por_causa_do_salt
+  [PASS] Verify_aceita_senha_correta_e_rejeita_errada
+  [PASS] Verify_retorna_false_para_hash_malformado
+  [PASS] Ingest_acima_de_1000_mas_ate_2000_gera_aviso
+  [PASS] Ingest_leitura_critica_cria_alerta_critico
+  [PASS] Ingest_leitura_segura_nao_cria_alerta
+  [PASS] Ingest_no_limite_maximo_e_seguro
+  [PASS] Ingest_sensor_inexistente_lanca_notfound
+================================================================
+Total: 46 | Passed: 46 | Failed: 0

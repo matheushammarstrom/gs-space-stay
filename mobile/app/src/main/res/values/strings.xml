@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SpaceStay</string>
+
+    <!-- Login -->
+    <string name="login_subtitle">Operação do hotel orbital</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_loading">Entrando…</string>
+    <string name="login_error_email">Informe um e-mail válido</string>
+    <string name="login_error_password">Informe a senha</string>
+    <string name="login_hint_guest">Hóspede: ana.costa@example.com / Guest@123</string>
+    <string name="login_hint_staff">Equipe: rafael.lima@spacestay.space / Engineer@123</string>
+
+    <!-- Comum -->
+    <string name="logout">Sair</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="loading">Carregando…</string>
+
+    <!-- Guest / My Stay -->
+    <string name="guest_title">Minha Estadia</string>
+    <string name="guest_comfort">Conforto da cabine</string>
+    <string name="guest_excursions">Excursões</string>
+    <string name="guest_book">Reservar</string>
+    <string name="guest_no_module">Você ainda não tem um módulo ativo.</string>
+    <string name="guest_booked">Reservado</string>
+
+    <!-- Staff / Mission Control -->
+    <string name="staff_title">Mission Control</string>
+    <string name="staff_modules">Módulos</string>
+    <string name="staff_alerts">Alertas em aberto</string>
+    <string name="staff_no_alerts">Nenhum alerta em aberto. Tudo sob controle. 🛰️</string>
+    <string name="staff_acknowledge">Reconhecer</string>
+    <string name="staff_capacity">Capacidade %1$d</string>
+</resources>

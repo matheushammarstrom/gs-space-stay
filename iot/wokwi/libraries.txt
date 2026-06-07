@@ -1,0 +1,4 @@
+# Bibliotecas usadas pelo sketch (o Wokwi instala automaticamente a partir deste arquivo).
+PubSubClient
+DHT sensor library
+Adafruit Unified Sensor

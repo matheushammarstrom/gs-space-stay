@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Anel orbital -->
+    <path
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M20,58 a34,12 0 1,0 68,0 a34,12 0 1,0 -68,0" />
+    <!-- Planeta -->
+    <path
+        android:fillColor="#E6005C"
+        android:pathData="M38,52 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0 z" />
+    <!-- Brilho -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M46,46 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 z" />
+</vector>
