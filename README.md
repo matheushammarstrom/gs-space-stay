@@ -27,6 +27,8 @@ Dois tipos de usuário guiam o produto:
 
 As pastas principais têm o seu próprio README com detalhes e instruções de execução.
 
+O **relatório técnico completo** do projeto (capa, introdução e as seis entregas) está em [`relatorio.pdf`](relatorio.pdf).
+
 ## Arquitetura
 
 ```
