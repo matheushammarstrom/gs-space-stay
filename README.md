@@ -79,4 +79,9 @@ As credenciais de teste estão em `backend/README.md`.
 
 ## Equipe
 
-Integrantes (RM e nome): _a preencher_.
+| Nome | RM |
+|------|------|
+| Vinicius Taiki | RM554226 |
+| Matheus Diniz | RM553083 |
+| Matheus Hammarstrom | RM553403 |
+| Lucas Fonseca | RM552973 |
